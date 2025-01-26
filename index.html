@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- manropoe google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/5bc67b8b0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cl: "#da373d",
+              textColor: "rgb(119, 119, 119)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <header
+      class="flex flex-col md:flex-row gap-8 lg:gap-0 max-w-[1200px] mx-auto pt-12 lg:pt-16 px-4 md:px-5"
+    >
+      <div
+        class="banner-text flex-1 flex flex-col gap-y-7 text-center md:text-left items-center md:items-start justify-center"
+      >
+        <h1
+          class="border font-extrabold w-[90%] lg:w-full text-5xl lg:text-[4rem] leading-[3.5rem] lg:leading-[2.4rem]"
+        >
+          It's good <span class="hidden lg:block"><br /></span> Tea Time At The
+          <span class="hidden lg:block"><br /></span>
+          Tea House
+        </h1>
+        <p class="text-textColor w-4/5">
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
+        </p>
+        <button
+          class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] py-4 px-8 text-white font-bold flex items-center gap-2 text-lg"
+        >
+          Explore More
+          <i class="fa-solid fa-arrow-right -rotate-45 text-lg"></i>
+        </button>
+      </div>
+
+      <div class="banner-image flex-1 flex items-center justify-center">
+        <div class="relative w-[95%] sm:w-[80%] md:w-full">
+          <img class="w-full min-h-[350px]" src="images/banner.png" alt="" />
+          <div
+            class="absolute left-8 lg:left-[85px] bottom-0 lg:bottom-2 ratings-card p-3 lg:p-4 flex gap-2 justify-center items-center shadow-[0px_7px_50px_0px_rgba(0,0,0,0.1)] bg-white rounded-lg"
+          >
+            <div>
+              <i
+                class="fa-solid fa-star text-[#FFC850] text-2xl lg:text-3xl"
+              ></i>
+            </div>
+            <div class="rating-text">
+              <p class="text-2xl lg:text-3xl font-extrabold">5.00</p>
+              <p class="text-sm lg:text-base text-textColor font-semibold">
+                Trust Pilot Ratings
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
