@@ -33,6 +33,14 @@
         },
       };
     </script>
+
+    <!-- styles -->
+    <style>
+      /* .clients {
+        background-image: url(./images/bg_cup.png);
+        background-size: cover;
+      } */
+    </style>
   </head>
   <body class="font-manrope space-y-20">
     <header
@@ -386,7 +394,91 @@
 
     <!-- footer section -->
     <footer
-      class="max-w-[1200px] mx-auto bg-gradient-to-r from-red-200 to-red-100 lg:py-32 lg:px-56"
-    ></footer>
+      class="bg-gradient-to-r from-red-200 to-red-100 lg:py-32 px-4 md:px-5"
+    >
+      <!-- footer content -->
+      <div class="max-w-[1200px] w-full mx-auto space-y-12">
+        <!-- logo -->
+        <div
+          class="flex flex-col sm:flex-row items-center gap-7 justify-between"
+        >
+          <div class="logo">
+            <img src="images/cup.png" alt="" />
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3 md:gap-7">
+            <p>Ready to get started?</p>
+            <button
+              class="py-3 px-6 bg-gradient-to-r from-[#FF8938] to-[#FF0000] font-bold text-xl rounded-lg text-white"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- footer links -->
+        <div
+          class="links-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-0"
+        >
+          <!-- quick links -->
+          <div class="quick-links text-center md:text-left">
+            <h2 class="font-extrabold text-2xl mb-6">Quick Links</h2>
+            <ul class="space-y-4 text-base font-semibold text-gray-700">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Insurance</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- our services -->
+          <div class="quick-links text-center md:text-left">
+            <h2 class="font-extrabold text-2xl mb-6">Our Services</h2>
+            <ul class="space-y-4 text-base font-semibold text-gray-700">
+              <li><a href="#">Life Insurance</a></li>
+              <li><a href="#">Car Insurance</a></li>
+              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">House Insurance</a></li>
+            </ul>
+          </div>
+
+          <!-- help -->
+          <div class="quick-links text-center md:text-left">
+            <h2 class="font-extrabold text-2xl mb-6">Help</h2>
+            <ul class="space-y-4 text-base font-semibold text-gray-700">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Cotact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- subscriber input -->
+          <div class="flex flex-col gap-7 text-center lg:text-left">
+            <h2 class="text-2xl font-extrabold">Subscribe to our newsletter</h2>
+            <!-- input -->
+            <div
+              class="flex items-center sm:w-[400px] sm:mx-auto md:w-auto md:mx-0"
+            >
+              <input
+                class="border border-x-0 border-t-0 border-b-gray-500 border-b-2 flex-1 py-5 bg-transparent"
+                type="email"
+                name=""
+                id=""
+                placeholder="Email Address"
+              />
+              <i
+                class="fa-solid fa-chevron-right bg-orange-500 p-2 px-4 rounded-full text-base text-white"
+              ></i>
+            </div>
+
+            <!-- social icon -->
+            <div class="flex gap-7 text-2xl mt-5 mx-auto lg:mx-0">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
